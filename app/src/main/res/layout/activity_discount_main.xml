@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DiscountMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee">
+        <FrameLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/login"
+            android:paddingTop="19dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="筹码提现"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:padding="9dp"
+                    android:src="@mipmap/icon_back"
+                    android:tint="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="刷新"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/allow_discount"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/head"
+            android:background="#fff"
+            android:layout_marginTop="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可提现筹码"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/coin_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0金币"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/zfb_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/allow_discount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#30a4ee"
+            android:text="支付宝提现"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:id="@+id/wechat_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/zfb_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#9ecb31"
+            android:text="微信提现"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/yh_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/wechat_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffb502"
+            android:text="银行卡提现"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/discount_record"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/yh_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fd4ea2"
+            android:text="提现记录"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discount_record"
+            android:text="账户信息填写错误可能会导致提现或者无法提现，请谨慎填写"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

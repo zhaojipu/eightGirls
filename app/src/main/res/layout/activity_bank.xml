@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BankActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/login"
+            android:paddingTop="19dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="筹码提现"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:padding="9dp"
+                    android:src="@mipmap/icon_back"
+                    android:tint="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="刷新"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/coin_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/head"
+            android:background="#eeeeee">
+
+            <TextView
+                android:id="@+id/tixian_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="可提现金币 0 个"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/input_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/coin_exchange"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/withdrawal_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:text="提现金额"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/allow_tixian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/withdrawal_text"
+                android:background="@null"
+                android:hint="请输入提现金额"
+                android:textColor="#b1b1b1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/get_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/input_exchange"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/exchange_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提现后将扣除2%手续费"
+                    android:textColor="#ee6e30"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zfb_info"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/get_exchange"
+            android:background="#eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="填写银行卡信息"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/count_info"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/zfb_info"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/count_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:text="姓名"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/count_text"
+                android:background="@null"
+                android:hint="请输入持卡人姓名"
+                android:textColor="#b1b1b1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/name_info"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/count_info"
+            android:layout_marginTop="2dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:text="银行卡号"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/bank_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/name_text"
+                android:background="@null"
+                android:hint="请输入银行卡号"
+                android:textColor="#b1b1b1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zfb_name_toast"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name_info"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/toast_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="切记姓名是持卡本人姓名"
+                    android:textColor="#ee6e30"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wechat_qq_relative"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/zfb_name_toast"
+            android:background="#eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="微信和QQ必须填写一项"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wechat_relative"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/wechat_qq_relative"
+            android:layout_marginTop="2dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/wechat_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:text="微信"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/wechat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/wechat_text"
+                android:background="@null"
+                android:hint="请输入微信（选填）"
+                android:textColor="#b1b1b1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qq_relative"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/wechat_relative"
+            android:layout_marginTop="2dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/qq_text"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:text="QQ"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/qq_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/qq_text"
+                android:background="@null"
+                android:hint="请输入QQ（选填）"
+                android:textColor="#b1b1b1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tixian_btn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/qq_relative"
+            android:background="#ee6e30"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="提现"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="65dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

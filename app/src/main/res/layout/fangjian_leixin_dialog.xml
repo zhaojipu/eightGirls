@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/free_dialog_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择房间类型"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gongkai_live"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="公开直播"
+            android:textColor="#fd4ea2"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+
+
+        <TextView
+            android:id="@+id/pwd"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="密码进房"
+            android:textColor="#fd4ea2"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/piao"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="收取门票"
+            android:textColor="#fd4ea2"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/tiaodan"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="跳蛋房间"
+            android:textColor="#fd4ea2"
+            android:textSize="15sp"
+            android:layout_marginBottom="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/jishi"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="计时收费"
+            android:textColor="#fd4ea2"
+            android:textSize="15sp"
+            android:layout_marginBottom="12dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

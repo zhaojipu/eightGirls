@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/free_dialog_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择编码"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ying_code_relative"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:id="@+id/ying_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="硬编码"
+            android:textSize="16sp"
+            android:textColor="#fd4ea2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/ying_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="低功耗,不易发热,设备适应性弱"
+            android:textColor="#b1b1b1"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gaogonghao"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        >
+        <TextView
+            android:id="@+id/ruan_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="硬编码"
+            android:textSize="16sp"
+            android:textColor="@color/textColor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/ruan_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高功耗，易发热，设备适应性强"
+            android:textColor="#b1b1b1"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/auto_select"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        >
+        <TextView
+            android:id="@+id/auto_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="硬编码"
+            android:textSize="16sp"
+            android:textColor="@color/textColor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/auto_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认自动选择"
+            android:textColor="#b1b1b1"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

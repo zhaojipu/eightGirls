@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp">
+        <LinearLayout
+            android:id="@+id/open_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/open_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开通剑士:"
+                android:textSize="16sp"
+                android:textColor="#333333"/>
+            <TextView
+                android:id="@+id/open_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.00元/月"
+                android:textColor="#fd4ea2"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/renew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/open_type"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp">
+            <TextView
+                android:id="@+id/xufei_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="续费剑士:"
+                android:textSize="16sp"
+                android:textColor="#333333"/>
+            <TextView
+                android:id="@+id/xufei_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.00元/月"
+                android:textColor="#fd4ea2"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ImmeOpen"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/renew"
+            android:layout_centerHorizontal="true"
+            android:text="立即开通"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="14dp"
+            android:textColor="#fff"
+            android:background="@drawable/btn_lijikaitong"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/wechat_pay"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/payment_method"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"
+            android:background="#fd4ea2"
+            android:text="刷新代理"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/zfb_pay"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/payment_method"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/wechat_pay"
+            android:background="#fd4ea2"
+            android:text="举报代理"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wechat_pay_rule"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="支付方式支付方式支付方式支付方式支付支付方式支付方式支付方式支付方式支付"
+        android:textColor="#a3a2a2"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
